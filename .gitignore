@@ -7,8 +7,6 @@
 .buildlog/
 .history
 
-
-
 # Flutter repo-specific
 /bin/cache/
 /bin/internal/bootstrap.bat
@@ -117,3 +115,25 @@ app.*.symbols
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 !/dev/ci/**/Gemfile.lock
+
+# =============================================================
+# Spotlight — entradas específicas do projeto
+# =============================================================
+
+# Segredos da aplicação — NUNCA versionar
+lib/services/app_secrets.dart
+
+# Variáveis de ambiente
+.env
+
+# IntelliJ / Android Studio
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Arquivos de contexto interno de IA (uso local apenas)
+docs/GEMINI.md
+docs/AGENTS.md
+docs/ANTIGRAVITY.md
+docs/CHANGES.md
